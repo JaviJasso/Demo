@@ -1,0 +1,38 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content:space-around;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  /*position: fixed;*/
+
+}
+
+.navbar a {
+  text-decoration: none;
+  margin: .2em 2em .15em 0em;
+  font-size: 2em;
+  color: black;
+  /*animation: links infinite 10s linear;*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #f67052;
+}
+
+.navbar a:hover {
+  color: #f67052;
+}
