@@ -3,30 +3,33 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-
 }
 
 @keyframes link {
-
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
 
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0);
   }
 }
 
-.about{
-  background: url('../assets/demo-about.jpg') center center no-repeat;
+.about {
+  /*background: url('../assets/demo-about.jpg') center center no-repeat;*/
   background-size: cover;
 }
 
@@ -35,7 +38,6 @@ body {
   height: 18em;
   width: auto;
 }
-
 
 .description {
   /*width: 100%;*/
@@ -59,7 +61,6 @@ body {
   /*opacity: 1;*/
   font-size: 6em;
   letter-spacing: 12px;
-
 }
 
 .description h2 {
@@ -75,5 +76,5 @@ body {
   /*opacity: 1;*/
   font-weight: 600;
   font-size: 2.2em;
-  letter-spacing: 1px
+  letter-spacing: 1px;
 }
