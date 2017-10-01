@@ -26,8 +26,9 @@ body {
 }*/
 
 .about{
-  background: url('../demo-about.jpg') center center no-repeat;
+  /*background: url('/Users/javi/ironYard/demo/src/assets/demo-about.jpg') center center no-repeat;*/
   background-size: cover;
+  background-color: #607744;
 }
 
 .about img {

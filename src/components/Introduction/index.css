@@ -2,13 +2,12 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-
 }
 
-
-.intro{
-  background: url('../flying.jpg') center center no-repeat;
+.intro {
+  /*background: url('/Users/javi/ironYard/demo/src/assets/flying.jpg');*/
   background-size: cover;
+  background-color: #34623F;
 
 }
 
@@ -20,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url('/Users/javi/ironYard/demo/src/assets/flying.jpg');
   /*background-color: hsla(0, 0%, 40%, 0.2);*/
   /*margin: 0em 3em 0em 3em;*/
   border-radius: 15px;
@@ -34,7 +34,6 @@ body {
   /*opacity: 1;*/
   font-size: 6em;
   letter-spacing: 12px;
-
 }
 
 .description1 h2 {
@@ -50,5 +49,5 @@ body {
   /*opacity: 1;*/
   font-weight: 600;
   font-size: 2.2em;
-  letter-spacing: 1px
+  letter-spacing: 1px;
 }
