@@ -1,13 +1,27 @@
 .sign {
-  background-color: #FADF63;
+  /*background-color: #FADF63;*/
+background: url("../../assets/images/Banana Redux.png");
+background-size: cover;
+/*width: 100%;*/
+display: flex;
+flex-flow: wrap;
 }
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    /*margin: 8px 0;*/
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 25px;
+}
+
+form {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  display: flex;
+  flex-flow: wrap;
 }
 
 
@@ -18,26 +32,45 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 17em;
+    border: 5px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column;
 }
 
 
 .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 17em;
+  border: 5px solid white;
+  border-radius: 25px;
+  background-color: #f44336;
 }
 
 
-.cancelbtn,.signupbtn {
+/*.cancelbtn,.signupbtn {
     float: left;
     width: 50%;
-}
+}*/
 
 
-.container {
+/*.container {
     padding: 16px;
-}
+}*/
 
+.psw {
+  font-size: 30px;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 100%;
+}
 
 .clearfix::after {
     content: "";
@@ -46,8 +79,25 @@ button {
 }
 
 
-@media screen and (max-width: 300px) {
+/*@media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
+}*/
+@media handheld, screen and (max-width: 440px) {
+
+  .sign {
+  width: 100%;
+  }
+
+  input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      /*margin: 8px 0;*/
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 25px;
+  }
+
 }

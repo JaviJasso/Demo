@@ -3,12 +3,13 @@ import './index.css';
 
 class Log extends Component {
   render() {
+
     return (
-      <div className='login'>
+      <div className='login' id='Log'>
         <div className='log'>
         <h2>Signup Form</h2>
           <form>
-            <div class="container">
+            <div className="container">
               <label><b>Email</b></label>
               <input type="text" placeholder="Enter Email" name="email" required />
               <label><b>Password</b></label>
@@ -17,9 +18,9 @@ class Log extends Component {
               <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
               <input type="checkbox" checked="checked" /> Remember me
               <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-              <div class="clearfix">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
+              <div className="clearfix">
+                <button type="button" className="cancelbtn">Cancel</button>
+                <button type="submit" className="signupbtn">Sign Up</button>
               </div>
             </div>
           </form>

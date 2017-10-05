@@ -5,10 +5,10 @@ class Introduction extends Component {
   render() {
     return (
       <div className='intro' id='Introduction'>
-        <div className='description1'>
-          <p>"bla bla bla bla bla bla bla bla bla"</p>
+        {/* <div className='description1'> */}
           <h2> Helping Developers</h2>
-        </div>
+          <p>To track</p>
+        {/* </div> */}
       </div>
     )
   }

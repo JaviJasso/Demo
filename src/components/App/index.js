@@ -6,7 +6,7 @@ import Navbar from '../Navbar'
 import Introduction from '../Introduction'
 import About from '../About'
 import Log from '../Log'
-import Calendar from '../Calendar'
+// import Calendar from '../Calendar'
 import Form from '../Form'
 import Sign from '../Sign'
 
@@ -21,7 +21,6 @@ class App extends Component {
         <Form/>
         <Log />
         <Sign />
-        <Calendar />
       </div>
     );
   }

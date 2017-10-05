@@ -6,11 +6,7 @@ class Sign extends Component {
     return (
       <div className="sign">
         <form>
-          <div class="imgcontainer">
-            <img src="" alt="" class="" />
-          </div>
-
-          <div class="container">
+          {/* <div className="container"> */}
             <label>
               <b>Username</b>
             </label>
@@ -20,17 +16,17 @@ class Sign extends Component {
             </label>
             <input type="password" placeholder="Enter Password" name="psw" required />
             <button type="submit">Login</button>
-            <input type="checkbox" checked="checked" /> Remember me
-          </div>
-
-          <div class="container">
-            <button type="button" class="cancelbtn">
+            <button type="button" className="cancelbtn">
               Cancel
             </button>
-            <span class="psw">
+            <input type="checkbox" checked="checked" /> Remember me
+          {/* </div> */}
+
+          {/* <div className="container"> */}
+            <span className="psw">
               Forgot <a href="#">password?</a>
             </span>
-          </div>
+          {/* </div> */}
         </form>
       </div>
     )

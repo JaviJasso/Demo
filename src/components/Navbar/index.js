@@ -9,8 +9,9 @@ class NavBar extends Component {
       <nav className='navbar'>
         <a href='#Introduction' to='#Introduction'>Introduction</a>
         <a href='#About' to='#About'>About</a>
-        <a href='#Log' to='#Log'>Log-In</a>
-        <a href='#Calendar' to='#Calendar'>Calendar</a>
+        <a href='#Log' to='#Log'>Log</a>
+        <a href='#Form' to='#Form'>Tracker</a>
+
       </nav>
     )
   }

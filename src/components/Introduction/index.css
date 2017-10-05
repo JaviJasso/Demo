@@ -5,38 +5,36 @@ body {
 }
 
 .intro {
-  /*background: url('/Users/javi/ironYard/demo/src/assets/flying.jpg');*/
+  background: url("../../assets/images/desert.jpg") center center no-repeat;
   background-size: cover;
-  background-color: #34623F;
+  /*background-color: #34623F;*/
 
 }
 
-.description1 {
-  /*width: 100%;*/
-  color: black;
-  height: 50em;
+.intro {
+
+  color: white;
+  height: 35em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/Users/javi/ironYard/demo/src/assets/flying.jpg');
-  /*background-color: hsla(0, 0%, 40%, 0.2);*/
-  /*margin: 0em 3em 0em 3em;*/
-  border-radius: 15px;
+  text-shadow: 2px 4px black;
+
 }
 
-.description1 h1 {
+/*.description1 h1 {
   margin-top: 0;
   margin-bottom: 22px;
   padding: 0;
   font-weight: 600;
   color: black;
   /*opacity: 1;*/
-  font-size: 6em;
+  /*font-size: 6em;
   letter-spacing: 12px;
-}
+}*/
 
-.description1 h2 {
+.intro h2 {
   margin-bottom: 2em;
   /*opacity: 1;*/
   font-weight: 600;
@@ -44,10 +42,62 @@ body {
   letter-spacing: 1px;
 }
 
-.description1 p {
+.intro p {
   margin-bottom: 2em;
   /*opacity: 1;*/
   font-weight: 600;
   font-size: 2.2em;
   letter-spacing: 1px;
+}
+
+@media handheld, screen and (max-width: 750px) {
+
+  .intro {
+  display: flex;
+  text-align: center;
+  letter-spacing: 10px;
+  flex-flow: column;
+  height: 45em;
+  /*height: 30em;*/
+  }
+
+  .description1 h2 {
+    margin-bottom: 2em;
+    /*opacity: 1;*/
+    font-weight: 600;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+  }
+
+  .description1 p {
+    margin-bottom: 2em;
+    /*opacity: 1;*/
+    font-weight: 600;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+  }
+
+}
+
+@media handheld, screen and (max-width: 440px) {
+
+  .intro {
+  display: flex;
+  text-align: center;
+  letter-spacing: 10px;
+  /*flex-flow: column;*/
+  height: 30em;
+  padding-right: 2em;
+  color: white;
+  text-shadow: 2px 2px grey;
+  }
+
+  .intro h2 {
+    padding-top: 5em;
+    /*padding-right: 2em;*/
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+  }
+
 }

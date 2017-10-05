@@ -1,16 +1,41 @@
 import React, {Component} from 'react';
 import './index.css';
 
+const INITIAL_STATE = {
+  username: '',
+  artist: '',
+  title: '',
+  notes: '',
+};
 
 class Form extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = INITIAL_STATE;
+  }
+
+  onChangeHandler = (key, value) => {
+    this.setState({ [key]: value });
+  }
+
+  onSubmitHandler = (event) => {
+    event.preventDefault();
+    // Add the song (meaning our state) to the App's state (songs).
+    this.props.addSong(this.state);
+    // Clear our form
+    this.setState(INITIAL_STATE);
+  }
+
   render() {
     return (
-      <div className='form'>
-        <form>
+      <div className='form' id='Form'>
+        <form >
           <label className='mood'>
-            <h1>La Vida</h1>
+            <h1>Daily</h1>
 
-            <h3>How is your mood?</h3>
+            <h3>Today's Mood?</h3>
+            <div className='moddy'>
             <p>Very Happy
             <input type="radio" name="vhappy"/> </p>
             <p>Happy
@@ -19,7 +44,7 @@ class Form extends Component {
             <input type="radio" name="stable" /> </p>
             <p>Could be better
             <input type="radio" name="couldbe" /></p>
-
+          </div>
 
           <h3>What did you eat?</h3>
 
@@ -39,24 +64,24 @@ class Form extends Component {
           <h3>Did you?</h3>
             <div className='behaviors'>
             <p>Exercise
-            <input type="radio" name="chooseone" value='yes'/><label for='YES'>yes</label>
-            <input type="radio" name="chooseone"  value='no'/><label for='NO'>no</label>
+            <input type="radio" name="chooseone" value='yes'/><label htmlFor='YES'>yes</label>
+            <input type="radio" name="chooseone"  value='no'/><label htmlFor='NO'>no</label>
             </p>
             <p>Sleep
-              <input type="radio" name="chooseone" value='yes'/><label for='YES'>yes</label>
-              <input type="radio" name="chooseone"  value='no'/><label for='NO'>no</label>
+              <input type="radio" name="chooseone" value='yes'/><label htmlFor='YES'>yes</label>
+              <input type="radio" name="chooseone"  value='no'/><label htmlFor='NO'>no</label>
             </p>
             <p>Sex
-              <input type="radio" name="chooseone" value='yes'/><label for='YES'>yes</label>
-              <input type="radio" name="chooseone"  value='no'/><label for='NO'>no</label>
+              <input type="radio" name="chooseone" value='yes'/><label htmlFor='YES'>yes</label>
+              <input type="radio" name="chooseone"  value='no'/><label htmlFor='NO'>no</label>
             </p>
             <p>Alcohol
-              <input type="radio" name="chooseone" value='yes'/><label for='YES'>yes</label>
-              <input type="radio" name="chooseone"  value='no'/><label for='NO'>no</label>
+              <input type="radio" name="chooseone" value='yes'/><label htmlFor='YES'>yes</label>
+              <input type="radio" name="chooseone"  value='no'/><label htmlFor='NO'>no</label>
             </p>
             <p>Smoke
-              <input type="radio" name="chooseone" value='yes'/><label for='YES'>yes</label>
-              <input type="radio" name="chooseone"  value='no'/><label for='NO'>no</label>
+              <input type="radio" name="chooseone" value='yes'/><label htmlFor='YES'>yes</label>
+              <input type="radio" name="chooseone"  value='no'/><label htmlFor='NO'>no</label>
             </p>
           </div>
           <input type="submit" value="Submit" />
