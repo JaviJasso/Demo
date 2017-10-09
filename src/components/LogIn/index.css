@@ -4,8 +4,8 @@
   color: white;
 }
 .log {
-  padding: 4em;
-  border-radius: 2%;
+  padding: 9em;
+  /*border-radius: 2%;*/
 
 }
 .log input[type=text],

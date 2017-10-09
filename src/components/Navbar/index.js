@@ -10,11 +10,11 @@ class NavBar extends Component {
       <div className='navbar'>
         <nav>
          <NavLink activeClassName="selected" className="nav-link" to="/">Home</NavLink>
-         <span> | </span>
+         {/* <span> | </span> */}
          <NavLink activeClassName="selected" className="nav-link" to="/about">About</NavLink>
-         <span> | </span>
+         {/* <span> | </span> */}
          <NavLink activeClassName="selected" className="nav-link" to="/login">Log In</NavLink>
-         <span> | </span>
+         {/* <span> | </span> */}
          {/* <NavLink activeClassName="selected" className="nav-link" to="/signup">Sign Up</NavLink>
          <span> | </span> */}
          <NavLink activeClassName="selected" className="nav-link" to="/form">Form</NavLink>

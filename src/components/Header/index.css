@@ -36,17 +36,20 @@ body {
 @media handheld, screen and (max-width: 440px) {
 
   .header {
-    text-align: center;
+    /*text-align: center;*/
     background-color: black;
     margin: 0;
     letter-spacing: 4px;
     color: white;
     width: 100%;
+    display: flex;
+    justify-content: start;
   }
 
   .header h1{
     display: flex;
   align-items: center;
+  justify-content: center;
   }
 
 }

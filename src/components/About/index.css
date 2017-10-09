@@ -41,7 +41,7 @@ body {
 .description {
   /*width: 100%;*/
   color: white;
-  height: 50em;
+  height: 35em;
   display: flex;
   flex-direction: column;
   justify-content: center;
