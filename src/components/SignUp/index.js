@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './index.css';
 
-class Log extends Component {
+class SignUp extends Component {
   render() {
 
     return (
-      <div className='login' id='Log'>
-        <div className='log'>
-        <h2>Signup Form</h2>
+      <div className='signUp' id='Log'>
+        <div className='sign'>
           <form>
+            <h2>Signup</h2>
             <div className="container">
               <label><b>Email</b></label>
               <input type="text" placeholder="Enter Email" name="email" required />
@@ -30,4 +30,4 @@ class Log extends Component {
   }
 }
 
-export default Log
+export default SignUp

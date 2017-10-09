@@ -26,6 +26,7 @@ class Form extends Component {
 
   onChangeHandler = (key, value) => {
     this.setState({ [key]: value });
+
   }
 
   onSubmitHandler = (event) => {
@@ -43,10 +44,10 @@ class Form extends Component {
         <form onSubmit={this.onSubmitHandler}>
           {/* Mood */}
           <Field
-            label="Mood rate 1-10"
+            label="Mood"
             onChange={(event) => this.onChangeHandler('mood', event.target.value)}
             value={this.state.mood}
-            fieldType="textarea"
+            fieldType="range"
 
           />
           {/* Breakfast */}
@@ -54,7 +55,7 @@ class Form extends Component {
             label="Breakfast"
             onChange={(event) => this.onChangeHandler('breakfast', event.target.value)}
             value={this.state.breakfast}
-            fieldType="textarea"
+            fieldType="text"
 
           />
           {/* Lunch */}
@@ -62,50 +63,42 @@ class Form extends Component {
             label="Lunch"
             onChange={(event) => this.onChangeHandler('lunch', event.target.value)}
             value={this.state.lunch}
-            fieldType="textarea"
+            fieldType="text"
           />
           {/* Dinner */}
           <Field
             label="Dinner"
             onChange={(event) => this.onChangeHandler('dinner', event.target.value)}
             value={this.state.dinner}
-            fieldType="textarea"
+            fieldType="text"
           />
           {/* Exercise */}
           <Field
             label="Exercise"
             onChange={(event) => this.onChangeHandler('exercise', event.target.value)}
             value={this.state.exercise}
-            fieldType="textarea"
+            fieldType="checkbox"
           />
           {/* Smoke */}
           <Field
             label="Smoke"
             onChange={(event) => this.onChangeHandler('smoke', event.target.value)}
             value={this.state.smoke}
-            fieldType="textarea"
+            fieldType="checkbox"
           />
           {/* Alcohol */}
           <Field
             label="Alcohol"
             onChange={(event) => this.onChangeHandler('alcohol', event.target.value)}
             value={this.state.alcohol}
-            fieldType="textarea"
+            fieldType="checkbox"
           />
           <Field
             label="Sex"
             onChange={(event) => this.onChangeHandler('sex', event.target.value)}
             value={this.state.sex}
-            fieldType="textarea"
+            fieldType="checkbox"
           />
-          {/* Notes */}
-          {/* <Field
-            label="Notes"
-            onChange={(event) => this.onChangeHandler('notes', event.target.value)}
-            value={this.state.notes}
-            fieldType="textarea"
-          /> */}
-          {/* Submit */}
           <button type="submit">Submit!</button>
         </form>
       </div>

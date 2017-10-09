@@ -9,10 +9,10 @@
 
 .field input {
   -webkit-transition: all .3s;
-  background-color: #000;
+  background-color: white;
   border-radius: 4px;
   border: 1px solid #d9d9d9;
-  color: #fff;
+  color: black;
   cursor: text;
   display: inline-block;
   font-size: 16px;
@@ -38,10 +38,11 @@
 
 .field textarea {
   -webkit-transition: all .3s;
-  background-color: #000;
+  opacity: .5;
+  background-color: white;
   border-radius: 4px;
   border: 1px solid #d9d9d9;
-  color: #fff;
+  color: black;
   cursor: text;
   display: inline-block;
   font-size: 16px;

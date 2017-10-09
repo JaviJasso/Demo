@@ -1,28 +1,111 @@
-.sign {
-  /*background-color: #FADF63;*/
+.login {
+  background: url("../../assets/images/meditation.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+}
+.log {
+  padding: 4em;
+  border-radius: 2%;
+
+}
+.log input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  /*margin: 0px 0;*/
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.log button {
+  /*background-color: green;*/
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20em;
+  border: 5px solid white;
+  border-radius: 25px;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}*/
+
+@media handheld, screen and (max-width: 750px) {
+
+  .log {
+    margin: 0em 0;
+    padding: 2em;
+    border-radius: 2%;
+  }
+
+}
+
+@media handheld, screen and (max-width: 440px) {
+
+  .login {
+    width: 100%;
+  }
+
+}
+
+
+
+/*.sign {
 background: url("../../assets/images/Banana Redux.png");
 background-size: cover;
-/*width: 100%;*/
 display: flex;
 flex-flow: wrap;
 }
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
-    /*margin: 8px 0;*/
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 25px;
-}
+}*/
 
-form {
+/*form {
   padding-top: 3em;
   padding-bottom: 3em;
   padding-left: 2em;
   display: flex;
   flex-flow: wrap;
-}
+}*/
 
 
 button {
@@ -53,15 +136,6 @@ button {
 }
 
 
-/*.cancelbtn,.signupbtn {
-    float: left;
-    width: 50%;
-}*/
-
-
-/*.container {
-    padding: 16px;
-}*/
 
 .psw {
   font-size: 30px;
@@ -79,11 +153,7 @@ button {
 }
 
 
-/*@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
-}*/
+
 @media handheld, screen and (max-width: 440px) {
 
   .sign {
@@ -93,7 +163,7 @@ button {
   input[type=text], input[type=password] {
       width: 100%;
       padding: 12px 20px;
-      /*margin: 8px 0;*/
+
       display: inline-block;
       border: 1px solid #ccc;
       box-sizing: border-box;
