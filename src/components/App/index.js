@@ -8,6 +8,11 @@ import About from '../About';
 import LogIn from '../LogIn';
 import StageForm from '../StageForm';
 
+
+import Auth from '../Auth';
+
+
+
 const App = () => (
   <BrowserRouter>
     <Switch>
@@ -20,5 +25,8 @@ const App = () => (
     </Switch>
   </BrowserRouter>
 )
+
+const auth = new Auth();
+auth.login();
 
 export default App;
