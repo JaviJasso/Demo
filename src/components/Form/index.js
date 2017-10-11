@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Field from '../Field';
+import { Link } from 'react-router-dom'
 import './index.css';
 
 const INITIAL_STATE = {
@@ -99,7 +100,9 @@ class Form extends Component {
             value={this.state.sex}
             fieldType="checkbox"
           />
-          <button type="submit">Submit!</button>
+          <Link to={"/form/userID"}>// Ask Jason
+            <button type="submit">Submit!</button>
+          </Link>
         </form>
       </div>
     );

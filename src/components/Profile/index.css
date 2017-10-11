@@ -1,0 +1,27 @@
+.profile {
+  /*flex: 0.5;*/
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.profile .tracker {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  color: #777;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 2em 0;
+  padding: 1em;
+}
+
+.profile .tracker p {
+  font-size: 22px;
+}
+
+.profile .tracker .detail {
+  color: #fff;
+  font-size: 16px;
+}

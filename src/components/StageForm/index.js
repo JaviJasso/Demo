@@ -5,11 +5,14 @@ import map from 'lodash/map';
 import PropTypes from 'prop-types';
 // import Field from './Field';
 import Form from '../Form';
+import Profile from '../Profile';
 
 import Header from '../Header'
 import Navbar from '../Navbar'
 
-const API = 'http://URLIDONTHAVEYET'
+
+
+const API = 'http://trackmyhealth.azurewebsites.net/swagger/'
 
 class StageForm extends Component {
 
@@ -20,23 +23,31 @@ class StageForm extends Component {
     };
   }
 
+
   componentDidMount() {
-    // Fetch trackers with the API.
-    fetch(API)
-      // .then((res) => res.json())  WORK ON THIS!! IT WAS BUGGING IT ASK JASON!!
-      .then((coolTrackers) => {
-        const trackers = map(coolTrackers, (coolTrackers) => ({
-          mood: coolTrackers.trackMood,
-          breakfast: coolTrackers.trackBreakfats,
-          lunch: coolTrackers.trackLunch,
-          dinner: coolTrackers.trackDinner,
-          exercise: coolTrackers.trackExercise,
-          smoke: coolTrackers.trackSmoke,
-          alcohol: coolTrackers.trackAlcohol,
-          sex: coolTrackers.trackSex,
-        }));
-        this.setState({ trackers });
-      });
+    const options = {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${localStorage.id_token}`,
+      }
+    }
+
+    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
+    .then(response => console.log(response))
+      // .then((res) => res.json()) //  WORK ON THIS!! IT WAS BUGGING IT ASK JASON!!
+      // .then((coolTrackers) => {
+      //   const trackers = map(coolTrackers, (coolTrackers) => ({
+      //     mood: coolTrackers.trackMood,
+      //     breakfast: coolTrackers.trackBreakfats,
+      //     lunch: coolTrackers.trackLunch,
+      //     dinner: coolTrackers.trackDinner,
+      //     exercise: coolTrackers.trackExercise,
+      //     smoke: coolTrackers.trackSmoke,
+      //     alcohol: coolTrackers.trackAlcohol,
+      //     sex: coolTrackers.trackSex,
+      //   }));
+      //   this.setState({ trackers });
+      // });
   }
 
   addTracker = (tracker) => {
@@ -74,6 +85,8 @@ class StageForm extends Component {
         console.error('Unable to create field:', err);
       });
   }
+
+
 
 
 

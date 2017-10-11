@@ -1,26 +1,26 @@
-import auth0 from 'auth0-js';
 import history from '../History';
+import auth0 from 'auth0-js';
+import { AUTH_CONFIG } from './auth0-variables';
 
 export default class Auth {
   auth0 = new auth0.WebAuth({
-    domain: 'demoday.auth0.com',
-    clientID: 'Qo9GXUd9vStLjV3FK10WFqdMuvH5FS8q',
-    redirectUri: 'http://localhost:3000/callback',
-    audience: 'https://demoday.auth0.com/userinfo',
+    domain: AUTH_CONFIG.domain,
+    clientID: AUTH_CONFIG.clientId,
+    redirectUri: AUTH_CONFIG.callbackUrl,
+    audience: `https://${AUTH_CONFIG.domain}/userinfo`,
     responseType: 'token id_token',
     scope: 'openid'
   });
-
-  login() {
-    this.auth0.authorize();
-  }
-
 
   constructor() {
     this.login = this.login.bind(this);
     this.logout = this.logout.bind(this);
     this.handleAuthentication = this.handleAuthentication.bind(this);
     this.isAuthenticated = this.isAuthenticated.bind(this);
+  }
+
+  login() {
+    this.auth0.authorize();
   }
 
   handleAuthentication() {
@@ -31,6 +31,7 @@ export default class Auth {
       } else if (err) {
         history.replace('/home');
         console.log(err);
+        alert(`Error: ${err.error}. Check the console for further details.`);
       }
     });
   }
@@ -60,6 +61,4 @@ export default class Auth {
     let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
     return new Date().getTime() < expiresAt;
   }
-
-
 }
