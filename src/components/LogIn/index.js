@@ -22,6 +22,7 @@ class LogIn extends Component {
       <div>
         <Header />
         <Navbar/>
+        <div className="login">
         <div className="container">
         {
           isAuthenticated() && (
@@ -64,6 +65,7 @@ class LogIn extends Component {
         </div>
       </div> */}
     </div>
+  </div>
     )
   }
 }

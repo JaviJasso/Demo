@@ -1,18 +1,24 @@
 .login {
-  background: url("../../assets/images/meditation.jpg") center center no-repeat;
+  background: url("../../assets/images/view.jpg") center center no-repeat;
   background-size: cover;
-  color: white;
+  width: 100%;
 }
-.log {
+
+.container h4 {
+  color: white;
+    padding: 6em;
+    margin: 0;
+    height: 30em;
+}
+/*.log {
   padding: 9em;
   /*border-radius: 2%;*/
 
-}
-.log input[type=text],
+/*}*/
+/*.log input[type=text],
 input[type=password] {
   width: 100%;
   padding: 12px 20px;
-  /*margin: 0px 0;*/
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -20,7 +26,6 @@ input[type=password] {
 
 
 .log button {
-  /*background-color: green;*/
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -57,13 +62,6 @@ input[type=password] {
 }
 
 
-/*@media screen and (max-width: 300px) {
-  .cancelbtn,
-  .signupbtn {
-    width: 100%;
-  }
-}*/
-
 @media handheld, screen and (max-width: 750px) {
 
   .log {
@@ -84,7 +82,7 @@ input[type=password] {
 
 
 
-/*.sign {
+.sign {
 background: url("../../assets/images/Banana Redux.png");
 background-size: cover;
 display: flex;
@@ -97,15 +95,15 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 25px;
-}*/
+}
 
-/*form {
+form {
   padding-top: 3em;
   padding-bottom: 3em;
   padding-left: 2em;
   display: flex;
   flex-flow: wrap;
-}*/
+}
 
 
 button {
@@ -150,7 +148,7 @@ button {
     content: "";
     clear: both;
     display: table;
-}
+}*/
 
 
 
