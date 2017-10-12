@@ -29,6 +29,7 @@ body {
   background: url("../../assets/images/demo-about.jpg") center center no-repeat;
   background-size: cover;
   /*background-color: #607744;*/
+  height: 43em;
 }
 
 /*.about img {

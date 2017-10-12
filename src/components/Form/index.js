@@ -45,10 +45,10 @@ class Form extends Component {
         <form onSubmit={this.onSubmitHandler}>
           {/* Mood */}
           <Field
-            label="Mood"
+            label="Good day?"
             onChange={(event) => this.onChangeHandler('mood', event.target.value)}
             value={this.state.mood}
-            fieldType="range"
+            fieldType="checkbox"
 
           />
           {/* Breakfast */}
@@ -100,8 +100,8 @@ class Form extends Component {
             value={this.state.sex}
             fieldType="checkbox"
           />
-          <Link to={"/form/userID"}>// Ask Jason
-            <button type="submit">Submit!</button>
+          <Link to={"/profile"}>
+            <button type="submit">SAVE</button>
           </Link>
         </form>
       </div>

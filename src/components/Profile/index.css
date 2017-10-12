@@ -1,9 +1,11 @@
 .profile {
   /*flex: 0.5;*/
+
   display: flex;
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
-
+  background: url("../../assets/images/clouds-demo.gif") center center no-repeat;
+  background-size: cover;
 }
 
 .profile .tracker {

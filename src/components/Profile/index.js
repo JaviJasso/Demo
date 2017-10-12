@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import map from 'lodash/map';
 import './index.css';
+import Header from '../Header'
+import Navbar from '../Navbar'
 
 
 class  Profile extends Component {
@@ -24,6 +26,9 @@ class  Profile extends Component {
 
   render(){
     return (
+      <div>
+        <Header />
+        <Navbar />
       <div className="profile">
         {map(this.state.trackers, (tracker) => (
           <div className="tracker">
@@ -38,6 +43,7 @@ class  Profile extends Component {
           </div>
         ))}
       </div>
+    </div>
     )
   }
 }

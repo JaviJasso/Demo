@@ -1,14 +1,41 @@
 .login {
-  background: url("../../assets/images/view.jpg") center center no-repeat;
+  background: url("../../assets/images/bridge-demo.gif") center center no-repeat;
   background-size: cover;
-  width: 100%;
+  /*width: 100%; */
+  padding: 6em;
+  margin: 0;
+  height: 23em;
+  display: flex;
+  justify-content: center;
 }
 
 .container h4 {
   color: white;
-    padding: 6em;
-    margin: 0;
-    height: 30em;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    text-shadow: 2px 2px black;
+    font-size: 2em;
+}
+
+.container button {
+      height: 2em;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 17em;
+      border: 5px solid white;
+      border-radius: 25px;
+      display: flex;
+      flex-flow: column;
+      /*align-items: center;*/
+      justify-content: center;
+      font-size: .7em;
+
 }
 /*.log {
   padding: 9em;

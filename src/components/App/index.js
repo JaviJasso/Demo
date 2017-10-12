@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Introduction from '../Introduction';
 import BaseLayout from '../BaseLayout';
-import About from '../About';
+// import About from '../About';
 import LogIn from '../LogIn';
 import StageForm from '../StageForm';
 import Auth from '../Auth';
@@ -23,13 +23,13 @@ const App = () => (
     <Switch>
       <BaseLayout>
         <Route exact path="/" component={Introduction}/>
-        <Route path="/about" component={About}/>
+        {/* <Route path="/about" component={About}/> */}
         <Route path="/login" render={(props) => <LogIn auth={auth} {...props} />} />
         <Route path="/form" render={(props) => {
             handleAuthentication(props);
             return <StageForm {...props} /> }}/>
         {/* // <Route exact path="/form" component={StageForm}/> */}
-        <Route exact path="/form/userID" component={Profile}/>
+        <Route exact path="/profile" component={Profile}/>
       </BaseLayout>
     </Switch>
   </BrowserRouter>
