@@ -18,11 +18,14 @@ class  Profile extends Component {
 
   componentDidMount() {
     // Fetch trackers with the API.
-    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`)
+    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`, {
+      headers: {
+        Authorization: `Bearer: ${localStorage.getItem('id_token')}`
+      }
+    })
     .then(response => response.json())
     .then(trackers => this.setState({ trackers }))
-    }
-
+  }
 
   render(){
     return (
