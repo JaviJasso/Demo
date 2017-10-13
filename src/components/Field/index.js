@@ -7,10 +7,10 @@ const Field = (props) => (
   <div className="field">
 
     <label>{props.label}</label>
-    {props.fieldType === 'textarea' && (
-      <textarea onChange={props.onChange}>
+    {props.fieldType === 'checkbox' && (
+      <checkbox onChange={props.onChange}>
         {props.value}
-      </textarea>
+      </checkbox>
     )}
 
     {props.fieldType !== 'textarea' && (
@@ -23,7 +23,7 @@ const Field = (props) => (
 
   </div>
 );
-// 
+//
 // Field.propTypes = {
 //   label: PropTypes.string.isRequired,
 //   fieldType: PropTypes.string.isRequired,
