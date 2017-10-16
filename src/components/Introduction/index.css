@@ -90,6 +90,7 @@ body {
   padding-right: 2em;
   color: white;
   text-shadow: 2px 2px grey;
+  height: 100vh;
   }
 
   .intro h2 {

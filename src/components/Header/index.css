@@ -27,8 +27,9 @@ body {
 @media handheld, screen and (max-width: 750px) {
 
   .header {
-  text-align: center;
-  letter-spacing: 10px;
+    display: flex;
+    flex-flow: column;
+    letter-spacing: 10px;
   }
 
 }

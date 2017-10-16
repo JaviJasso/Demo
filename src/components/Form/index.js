@@ -25,6 +25,19 @@ class Form extends Component {
     this.state = INITIAL_STATE;
   }
 
+  componentWillMount = () => {
+    this.selectedCheckboxes = new Set();
+  }
+
+  toggleCheckbox = label => {
+     if (this.selectedCheckboxes.has(label)) {
+       this.selectedCheckboxes.delete(label);
+     } else {
+       this.selectedCheckboxes.add(label);
+     }
+   }
+
+
   onChangeHandler = (key, value) => {
     this.setState({ [key]: value });
 
@@ -75,7 +88,7 @@ class Form extends Component {
           />
           {/* Exercise */}
           <Field
-            label="Healthy Exercise"
+            label="Exercise"
             onChange={(event) => this.onChangeHandler('exercise', event.target.value)}
             value={this.state.exercise}
             fieldType="checkbox"

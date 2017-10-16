@@ -40,7 +40,6 @@ body {
   display: flex;
   flex-flow: column;
   text-align: center;
-  /*position: fixed;*/
   }
 
 }

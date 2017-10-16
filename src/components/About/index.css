@@ -87,13 +87,13 @@ body {
   .about{
     /*background: url('/Users/javi/ironYard/demo/src/assets/demo-about.jpg') center center no-repeat;*/
     background-size: cover;
-    /*height: 60vh;*/
+    height: 100vh;
   }
 
   .description {
     /*width: 100%;*/
     color: white;
-    height: 30em;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './index.css'
-import map from 'lodash/map';
+// import map from 'lodash/map';
 
 import PropTypes from 'prop-types';
 // import Field from './Field';
@@ -12,7 +12,7 @@ import Navbar from '../Navbar'
 
 
 
-const API = 'http://trackmyhealth.azurewebsites.net/swagger/'
+// const API = 'http://trackmyhealth.azurewebsites.net/swagger/'
 
 class StageForm extends Component {
 
@@ -77,7 +77,7 @@ class StageForm extends Component {
       }
     };
 
-    fetch(API, options)
+    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
       .then(res => {
         console.log('Created field successfully:', res);
       })

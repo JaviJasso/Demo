@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './index.css';
 
 const Field = (props) => (
@@ -7,10 +7,10 @@ const Field = (props) => (
   <div className="field">
 
     <label>{props.label}</label>
-    {props.fieldType === 'checkbox' && (
-      <checkbox onChange={props.onChange}>
+    {props.fieldType === 'textarea' && (
+      <textarea onChange={props.onChange}>
         {props.value}
-      </checkbox>
+      </textarea>
     )}
 
     {props.fieldType !== 'textarea' && (

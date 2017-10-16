@@ -4,7 +4,7 @@ import map from 'lodash/map';
 import './index.css';
 import Header from '../Header'
 import Navbar from '../Navbar'
-
+import Graph from '../Graph'
 
 class  Profile extends Component {
 
@@ -18,9 +18,9 @@ class  Profile extends Component {
 
   componentDidMount() {
     // Fetch trackers with the API.
-    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`, {
+    fetch(`https://trackmyhealth.azurewebsites.net/api/FormData/me`, {
       headers: {
-        Authorization: `Bearer: ${localStorage.getItem('id_token')}`
+        Authorization: `Bearer ${localStorage.getItem('id_token')}`
       }
     })
     .then(response => response.json())
@@ -33,16 +33,17 @@ class  Profile extends Component {
         <Header />
         <Navbar />
       <div className="profile">
+        <Graph />
         {map(this.state.trackers, (tracker) => (
           <div className="tracker">
-            <p>Mood:{tracker.mood}</p>
+            {/* <p>Mood:{tracker.mood}</p>
             <p>Breakfats:{tracker.breakfast}</p>
             <p>Lunch:{tracker.lunch}</p>
             <p>Dinner:{tracker.dinner}</p>
             <p>Exercise:{tracker.exercise}</p>
             <p>Smoke:{tracker.smoke}</p>
             <p>Alcohol:{tracker.alcohol}</p>
-            <p>Sex:{tracker.sex}</p>
+            <p>Sex:{tracker.sex}</p> */}
           </div>
         ))}
       </div>
@@ -51,19 +52,7 @@ class  Profile extends Component {
   }
 }
 
-
-Profile.propTypes = {
-  trackers: PropTypes.arrayOf(PropTypes.object).isRequired,
-}
+// Profile.propTypes = {
+//   trackers: PropTypes.arrayOf(PropTypes.object).isRequired,
+// }
 export default Profile
-
-
-// const trackers = map(coolTrackers, (coolTrackers) => ({
-//   mood: coolTrackers.trackMood,
-//   breakfast: coolTrackers.trackBreakfats,
-//   lunch: coolTrackers.trackLunch,
-//   dinner: coolTrackers.trackDinner,
-//   exercise: coolTrackers.trackExercise,
-//   smoke: coolTrackers.trackSmoke,
-//   alcohol: coolTrackers.trackAlcohol,
-//   sex: coolTrackers.trackSex,

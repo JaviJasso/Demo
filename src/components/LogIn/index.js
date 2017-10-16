@@ -47,23 +47,6 @@ class LogIn extends Component {
             )
         }
       </div>
-      {/* <div className='login' id='LogIn'>
-        <div className='log'>
-        <h2>Log in</h2>
-          <form>
-            <div className="container">
-              <label><b>Username</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required />
-              <label><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required />
-              <div className="clearfix">
-                <button type="button" className="cancelbtn">Cancel</button>
-                <button type="submit" className="signupbtn">Log In</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div> */}
     </div>
   </div>
     )
@@ -71,8 +54,3 @@ class LogIn extends Component {
 }
 
 export default LogIn
-
-//
-// <span className="psw">
-//   Forgot <a href="#">password?</a>
-// </span>

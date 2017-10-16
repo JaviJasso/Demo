@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "auth0-js": "^8.10.1",
+    "fusioncharts": "^3.12.2",
+    "jwt-decode": "^2.2.0",
     "lodash.map": "^4.6.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-fusioncharts": "^1.0.4",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14"
   },
