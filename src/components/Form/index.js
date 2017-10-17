@@ -8,6 +8,7 @@ const INITIAL_STATE = {
   mood: '',
   breakfast: '',
   lunch: '',
+  dinner: '',
   exercise: '',
   smoke: '',
   alcohol: '',
@@ -50,6 +51,35 @@ class Form extends Component {
     // Clear our form
     this.setState(INITIAL_STATE);
   }
+
+  addTrackerToApi = (tracker) => {
+    const options = {
+      method: "POST",
+      body: JSON.stringify({
+        trackMood: tracker.mood,
+        trackBreakfats: tracker.breakfast,
+        trackLunch: tracker.lunch,
+        trackExercise: tracker.exercise,
+        trackSmoke: tracker.smoke,
+        trackAlcohol: tracker.alcohol,
+        trackSex: tracker.sex,
+      }),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    };
+
+    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
+      .then(res => {
+        console.log('Created field successfully:', res);
+      })
+      .catch(err => {
+        console.error('Unable to create field:', err);
+      });
+  }
+
+
 
   render() {
     return (

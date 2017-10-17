@@ -5,7 +5,7 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'healthtracker.auth0.com',
     clientID: 'FnglgYEe6WUS40OOfVaPQA48Z2Rw2xfe',
-    redirectUri: 'http://localhost:3000/form',
+    redirectUri: process.env.PUBLIC_URL === '/' ? 'http://localhost:3000/' : 'https://javijasso.github.io/demo/',
     audience: 'https://api.healthtracker.com',
     responseType: 'token id_token'
   });
@@ -25,9 +25,8 @@ export default class Auth {
     this.auth0.parseHash((err, authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult);
-        history.replace('/home');
       } else if (err) {
-        history.replace('/home');
+        history.replace('/');
         console.log(err);
         alert(`Error: ${err.error}. Check the console for further details.`);
       }
@@ -40,8 +39,8 @@ export default class Auth {
     localStorage.setItem('access_token', authResult.accessToken);
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem('expires_at', expiresAt);
-    // navigate to the home route
-    history.replace('/home');
+    // navigate to the form route
+    history.replace('/form');
   }
 
   logout() {
@@ -49,8 +48,8 @@ export default class Auth {
     localStorage.removeItem('access_token');
     localStorage.removeItem('id_token');
     localStorage.removeItem('expires_at');
-    // navigate to the home route
-    history.replace('/home');
+    // navigate to the form route
+    history.replace('/');
   }
 
   isAuthenticated() {

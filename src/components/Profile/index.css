@@ -4,11 +4,12 @@
   display: flex;
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
-  background: url("../../assets/images/clouds-demo.gif") center center no-repeat;
   background-size: cover;
+  height: 100vh;
+  background-color: black;
 }
 
-.profile .tracker {
+/*.profile .tracker {
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
   color: #777;
@@ -26,4 +27,4 @@
 .profile .tracker .detail {
   color: #fff;
   font-size: 16px;
-}
+}*/

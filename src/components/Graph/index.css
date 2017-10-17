@@ -1,0 +1,45 @@
+.graph {
+  height: 5px 5px;
+}
+
+@media handheld, screen and (max-width: 750px) {
+
+  .graph {
+    /*background-color: hsla(0, 0%, 90%, 0.8);
+    color: black;
+    height: 70em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 8em 0em 8em;
+    border-radius: 15px;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+    font-weight: bold;*/
+    height: 5px 5px;
+  }
+
+}
+
+@media handheld, screen and (max-width: 440px) {
+
+  .graph {
+    background-color: hsla(0, 0%, 90%, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .graph {
+    height: 108em;
+  }
+
+  .graph {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+
+
+}

@@ -12,8 +12,8 @@ class Introduction extends Component {
         <Header />
         <Navbar/>
       <div className='intro' id='Introduction'>
-          <h2> Helping Developers</h2>
-          <p>To track</p>
+          <h2> THE IDEA BEHIND LIFE-FRAME</h2>
+          <p>We wanted to create a tool that will help to achieve a balance path.</p>
       </div>
       <About />
     </div>

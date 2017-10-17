@@ -11,9 +11,6 @@ import Header from '../Header'
 import Navbar from '../Navbar'
 
 
-
-// const API = 'http://trackmyhealth.azurewebsites.net/swagger/'
-
 class StageForm extends Component {
 
   constructor(props) {
@@ -85,8 +82,6 @@ class StageForm extends Component {
         console.error('Unable to create field:', err);
       });
   }
-
-
 
 
 

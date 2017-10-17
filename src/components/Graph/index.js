@@ -4,6 +4,7 @@ import FusionCharts from "fusioncharts"
 // Load the charts module
 import charts from "fusioncharts/fusioncharts.charts"
 import ReactFC from "react-fusioncharts"
+import './index.css'
 
 // Pass fusioncharts as a dependency of charts
 charts(FusionCharts)
@@ -11,7 +12,7 @@ charts(FusionCharts)
 let myDataSource = {
   chart: {
     caption: "My Health",
-    subcaption: "Last year",
+    subcaption: "2017",
     xaxisname: "Month",
     theme: "ocean"
   },
@@ -59,7 +60,7 @@ let myDataSource = {
   ],
   dataset: [
     {
-      seriesname: "Exercise",
+      seriesname: "Mood",
       renderas: "line",
       showvalues: "0",
       data: [
@@ -94,15 +95,15 @@ let myDataSource = {
           value: "22"
         },
         {
-          value: "28"
+          value: ""
         },
         {
-          value: "13"
+          value: ""
         }
       ]
     },
     {
-      seriesname: "Smoking",
+      seriesname: "Breakfast",
       renderas: "line",
       showvalues: "0",
       data: [
@@ -137,20 +138,231 @@ let myDataSource = {
           value: "7"
         },
         {
-          value: "4"
+          value: ""
         },
         {
-          value: "2"
+          value: ""
         }
       ]
-    },
+    },  {
+        seriesname: "Lunch",
+        renderas: "line",
+        showvalues: "0",
+        data: [
+          {
+            value: "3"
+          },
+          {
+            value: "9"
+          },
+          {
+            value: "12"
+          },
+          {
+            value: "4"
+          },
+          {
+            value: "2"
+          },
+          {
+            value: "4"
+          },
+          {
+            value: "12"
+          },
+          {
+            value: "8"
+          },
+          {
+            value: "7"
+          },
+          {
+            value: "12"
+          },
+          {
+            value: ""
+          },
+          {
+            value: ""
+          }
+        ]
+      },  {
+          seriesname: "Dinner",
+          renderas: "line",
+          showvalues: "0",
+          data: [
+            {
+              value: "8"
+            },
+            {
+              value: "19"
+            },
+            {
+              value: "14"
+            },
+            {
+              value: "14"
+            },
+            {
+              value: "12"
+            },
+            {
+              value: "14"
+            },
+            {
+              value: "12"
+            },
+            {
+              value: "30"
+            },
+            {
+              value: "27"
+            },
+            {
+              value: "22"
+            },
+            {
+              value: ""
+            },
+            {
+              value: ""
+            }
+          ]
+        },  {
+            seriesname: "Exercise",
+            renderas: "line",
+            showvalues: "0",
+            data: [
+              {
+                value: "31"
+              },
+              {
+                value: "19"
+              },
+              {
+                value: "22"
+              },
+              {
+                value: "15"
+              },
+              {
+                value: "21"
+              },
+              {
+                value: "14"
+              },
+              {
+                value: "11"
+              },
+              {
+                value: "18"
+              },
+              {
+                value: "17"
+              },
+              {
+                value: "12"
+              },
+              {
+                value: ""
+              },
+              {
+                value: ""
+              }
+            ]
+          },  {
+              seriesname: "Smoke",
+              renderas: "line",
+              showvalues: "0",
+              data: [
+                {
+                  value: "1"
+                },
+                {
+                  value: "9"
+                },
+                {
+                  value: "2"
+                },
+                {
+                  value: "4"
+                },
+                {
+                  value: "4"
+                },
+                {
+                  value: "4"
+                },
+                {
+                  value: "1"
+                },
+                {
+                  value: "8"
+                },
+                {
+                  value: "12"
+                },
+                {
+                  value: "12"
+                },
+                {
+                  value: ""
+                },
+                {
+                  value: ""
+                }
+              ]
+            },
+     {
+        seriesname: "Alcohol",
+        renderas: "line",
+        showvalues: "0",
+        data: [
+          {
+            value: "0"
+          },
+          {
+            value: "0"
+          },
+          {
+            value: "1"
+          },
+          {
+            value: "4"
+          },
+          {
+            value: "2"
+          },
+          {
+            value: "4"
+          },
+          {
+            value: "1"
+          },
+          {
+            value: "0"
+          },
+          {
+            value: "1"
+          },
+          {
+            value: "1"
+          },
+          {
+            value: ""
+          },
+          {
+            value: ""
+          }
+        ]
+      },
     {
       seriesname: "Sex",
       renderas: "line",
       showvalues: "0",
       data: [
         {
-          value: "3"
+          value: "15"
         },
         {
           value: "9"
@@ -159,31 +371,31 @@ let myDataSource = {
           value: "12"
         },
         {
-          value: "4"
-        },
-        {
-          value: "2"
-        },
-        {
-          value: "4"
+          value: "14"
         },
         {
           value: "12"
         },
         {
-          value: "8"
+          value: "14"
+        },
+        {
+          value: "12"
+        },
+        {
+          value: "18"
         },
         {
           value: "7"
         },
         {
-          value: "12"
+          value: "10"
         },
         {
-          value: "9"
+          value: ""
         },
         {
-          value: "5"
+          value: ""
         }
       ]
     }
@@ -194,8 +406,8 @@ let chartConfigs = {
   id: "revenue-profits-chart",
   renderAt: "revenue-profits-chart-container",
   type: "mscombi2d",
-  width: 600,
-  height: 400,
+  width: 370,
+  height: 600,
   dataFormat: "json",
   dataSource: myDataSource
 }
@@ -204,7 +416,7 @@ export default class Graph extends React.Component {
   render() {
     return (
       <div id="chart-container">
-        <ReactFC {...chartConfigs} />
+        <ReactFC className="graph" {...chartConfigs} />
         {/* <ReactFC {...revenueChartConfigs} /> */}
       </div>
     )

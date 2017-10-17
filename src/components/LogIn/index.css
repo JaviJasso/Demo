@@ -9,15 +9,14 @@
   justify-content: center;
 }
 
-/*.container {
+.container {
     color: white;
     display: flex;
     justify-content: center;
     flex-flow: column;
-    align-items: center;
     text-shadow: 2px 2px black;
     font-size: 2em;
-}*/
+}
 
 .login button {
       height: .5em;
@@ -37,155 +36,20 @@
       font-size: .7em;
 
 }
-/*.log {
-  padding: 9em;
-  /*border-radius: 2%;*/
-
-/*}*/
-/*.log input[type=text],
-input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-
-.log button {
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 20em;
-  border: 5px solid white;
-  border-radius: 25px;
-}
-
-
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-
-.cancelbtn,
-.signupbtn {
-  float: left;
-  width: 50%;
-}
-
-
-.container {
-  padding: 16px;
-}
-
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-@media handheld, screen and (max-width: 750px) {
-
-  .log {
-    margin: 0em 0;
-    padding: 2em;
-    border-radius: 2%;
-  }
-
-}
 
 @media handheld, screen and (max-width: 440px) {
 
-  .login {
-    width: 100%;
+
+  .container {
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      text-shadow: 2px 2px black;
+      font-size: 1.2em;
   }
 
-}
-
-
-
-.sign {
-background: url("../../assets/images/Banana Redux.png");
-background-size: cover;
-display: flex;
-flex-flow: wrap;
-}
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 25px;
-}
-
-form {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  display: flex;
-  flex-flow: wrap;
-}
-
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 17em;
-    border: 5px solid white;
-    border-radius: 25px;
-    display: flex;
-    flex-flow: column;
-}
-
-
-.cancelbtn {
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 17em;
-  border: 5px solid white;
-  border-radius: 25px;
-  background-color: #f44336;
-}
-
-
-
-.psw {
-  font-size: 30px;
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-  padding-bottom: 30px;
-  width: 100%;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}*/
-
-
-
-@media handheld, screen and (max-width: 440px) {
-
-  .sign {
-  width: 100%;
-  }
-
-  input[type=text], input[type=password] {
+  /*input[type=text], input[type=password] {
       width: 100%;
       padding: 12px 20px;
 
@@ -193,6 +57,6 @@ button {
       border: 1px solid #ccc;
       box-sizing: border-box;
       border-radius: 25px;
-  }
+  }*/
 
 }

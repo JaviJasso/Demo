@@ -15,7 +15,10 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 5em;
 }
+
+
 
 /*.header h1 {
   display: flex;
@@ -37,7 +40,6 @@ body {
 @media handheld, screen and (max-width: 440px) {
 
   .header {
-    /*text-align: center;*/
     background-color: black;
     margin: 0;
     letter-spacing: 4px;
@@ -49,8 +51,8 @@ body {
 
   .header h1{
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
 
 }

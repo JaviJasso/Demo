@@ -34,8 +34,8 @@ class  Profile extends Component {
         <Navbar />
       <div className="profile">
         <Graph />
-        {map(this.state.trackers, (tracker) => (
-          <div className="tracker">
+        {map(this.state.trackers, (tracker, i) => (
+          <div className="tracker" key={i}>
             {/* <p>Mood:{tracker.mood}</p>
             <p>Breakfats:{tracker.breakfast}</p>
             <p>Lunch:{tracker.lunch}</p>
