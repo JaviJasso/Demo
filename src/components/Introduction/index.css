@@ -5,7 +5,7 @@ body {
 }
 
 .intro {
-  background: url("../../assets/images/desert.jpg") center center no-repeat;
+  background: url("../../assets/images/hoja.jpg") center center no-repeat;
   background-size: cover;
   color: white;
   height: 100vh;
@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsla(0, 46%, 22%, 0.2);
+  /*background-color: hsla(0, 46%, 22%, 0.2);*/
   border-radius: 15px;
   text-shadow: 2px 4px black;
   padding-top: 1.5em;
@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsla(0, 46%, 22%, 0.2);
+  /*background-color: hsla(0, 46%, 22%, 0.2);*/
   border-radius: 15px;
   text-shadow: 2px 4px black;
   font-weight: 600;
