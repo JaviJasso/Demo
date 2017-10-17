@@ -9,7 +9,7 @@ form {
   padding-top: 3em;
   padding-bottom: 3em;
   padding-left: 2em;
-  display: flex;
+  /*display: flex;*/
   flex-flow: wrap;
   justify-content: center;
 }
@@ -55,6 +55,8 @@ button {
   margin-bottom: 1em;
   font-weight: 600;
   text-shadow: 1px 1px grey;
+  padding-left: 12em;
+padding-right: 0em;
 }
 
  form button {

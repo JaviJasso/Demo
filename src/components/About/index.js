@@ -12,11 +12,9 @@ class About extends Component {
         {/* <Header />
         <Navbar/> */}
       <div className='about' id='About'>
-        <div className="description">
-          <h1>Dev</h1>
           <h2> The team</h2>
-          <p>Jax & Dyn  </p>
-       </div>
+          <h2>Jax & Dyn </h2>
+          <p>We wanted to create an app that we would use, and we did. Javi designed and developed a React front end that consumes the C#/.Net back end API and SQL database crafted by Brandyn.</p>
       </div>
     </div>
     )

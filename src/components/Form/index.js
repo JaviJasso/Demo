@@ -58,7 +58,7 @@ class Form extends Component {
         <form onSubmit={this.onSubmitHandler}>
           {/* Mood */}
           <Field
-            label="Good day?"
+            label="Have you had a good day?"
             onChange={(event) => this.onChangeHandler('mood', event.target.checked)}
             value={this.state.mood}
             fieldType="checkbox"
@@ -66,7 +66,7 @@ class Form extends Component {
           />
           {/* Breakfast */}
           <Field
-            label="Healthy Breakfast"
+            label="Have you had a healthy breakfast?"
             onChange={(event) => this.onChangeHandler('breakfast', event.target.checked)}
             value={this.state.breakfast}
             fieldType="checkbox"
@@ -74,41 +74,41 @@ class Form extends Component {
           />
           {/* Lunch */}
           <Field
-            label="Healthy Lunch"
+            label="Have you had a healthy lunch?"
             onChange={(event) => this.onChangeHandler('lunch', event.target.checked)}
             value={this.state.lunch}
             fieldType="checkbox"
           />
           {/* Dinner */}
           <Field
-            label="Healthy Dinner"
+            label="Have you had a healthy dinner?"
             onChange={(event) => this.onChangeHandler('dinner', event.target.checked)}
             value={this.state.dinner}
             fieldType="checkbox"
           />
           {/* Exercise */}
           <Field
-            label="Exercise"
+            label="Did you exercise today?"
             onChange={(event) => this.onChangeHandler('exercise', event.target.checked)}
             value={this.state.exercise}
             fieldType="checkbox"
           />
           {/* Smoke */}
           <Field
-            label="Did you Smoke"
+            label="Have you smoked today?"
             onChange={(event) => this.onChangeHandler('smoke', event.target.checked)}
             value={this.state.smoke}
             fieldType="checkbox"
           />
           {/* Alcohol */}
           <Field
-            label="Did you drink Alcohol"
+            label="Have you alcohol today?"
             onChange={(event) => this.onChangeHandler('alcohol', event.target.checked)}
             value={this.state.alcohol}
             fieldType="checkbox"
           />
           <Field
-            label="Did you have Sex"
+            label="Have you had sex today?"
             onChange={(event) => this.onChangeHandler('sex', event.target.checked)}
             value={this.state.sex}
             fieldType="checkbox"

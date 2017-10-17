@@ -13,7 +13,7 @@ class Introduction extends Component {
         <Navbar/>
       <div className='intro' id='Introduction'>
           <h2> THE IDEA BEHIND LIFE-FRAME</h2>
-          <p>We wanted to create a tool that will help to achieve a balance path.</p>
+          <p>Life Frame is a web app borne out of passion for lifestyle. This is a tool for anyone who wants to take better care of themselves. </p>
       </div>
       <About />
     </div>
