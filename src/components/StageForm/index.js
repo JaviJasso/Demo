@@ -2,10 +2,8 @@ import React, {Component} from 'react'
 import './index.css'
 // import map from 'lodash/map';
 
-import PropTypes from 'prop-types';
 // import Field from './Field';
 import Form from '../Form';
-import Profile from '../Profile';
 
 import Header from '../Header'
 import Navbar from '../Navbar'
@@ -29,7 +27,7 @@ class StageForm extends Component {
       }
     }
 
-    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
+    fetch(`https://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
     .then(response => console.log(response))
       // .then((res) => res.json()) //  WORK ON THIS!! IT WAS BUGGING IT ASK JASON!!
       // .then((coolTrackers) => {
@@ -74,7 +72,7 @@ class StageForm extends Component {
       }
     };
 
-    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
+    fetch(`https://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
       .then(res => {
         console.log('Created field successfully:', res);
       })

@@ -1,6 +1,8 @@
 import history from '../History';
 import auth0 from 'auth0-js';
 
+console.log(process.env.PUBLIC_URL);
+
 export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'healthtracker.auth0.com',

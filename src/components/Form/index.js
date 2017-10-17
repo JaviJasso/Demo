@@ -70,7 +70,7 @@ class Form extends Component {
       }
     };
 
-    fetch(`http://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
+    fetch(`https://trackmyhealth.azurewebsites.net/api/FormData/me`, options)
       .then(res => {
         console.log('Created field successfully:', res);
       })
