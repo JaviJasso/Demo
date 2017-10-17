@@ -406,10 +406,11 @@ let chartConfigs = {
   id: "revenue-profits-chart",
   renderAt: "revenue-profits-chart-container",
   type: "mscombi2d",
-  width: 370,
-  height: 600,
+  width: "100%",
+  height: "60%",
   dataFormat: "json",
-  dataSource: myDataSource
+  dataSource: myDataSource,
+  marginLeft: "10px",
 }
 
 export default class Graph extends React.Component {

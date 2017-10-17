@@ -1,13 +1,11 @@
 import history from '../History';
 import auth0 from 'auth0-js';
 
-console.log(process.env.PUBLIC_URL);
-
 export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'healthtracker.auth0.com',
     clientID: 'FnglgYEe6WUS40OOfVaPQA48Z2Rw2xfe',
-    // redirectUri: process.env.PUBLIC_URL === '/' ? 'http://localhost:3000/' : 'https://lifeframe.surge.sh',
+    redirectUri: window.location.origin,
     audience: 'https://api.healthtracker.com',
     responseType: 'token id_token'
   });

@@ -37,17 +37,16 @@ button {
   font-family: 'Raleway', sans-serif;
   background: url("../../assets/images/Banana Redux.png") center center no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .add-form h2 {
-  /*flex: 0.4;*/
+  flex: 0.2;
 }
 
 .add-form form {
   animation: pulse 2s infinite;
   background-color: hsla(0, 0%, 90%, 0.4);
-
-  /*background: white;*/
   border-radius: 5px;
   border: 2px solid #555;
   color: black;
@@ -125,21 +124,20 @@ button {
 
 @media handheld, screen and (max-width: 750px) {
 
-  .mood {
-    background-color: hsla(0, 0%, 90%, 0.8);
-    /*width: 100%;*/
+  .add-form form {
+    animation: pulse 2s infinite;
+    background-color: hsla(0, 0%, 90%, 0.4);
+    border-radius: 5px;
+    border: 2px solid #555;
     color: black;
-    height: 70em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0em 8em 0em 8em;
-    border-radius: 15px;
-    font-size: 1.7em;
-    letter-spacing: 1px;
-    font-weight: bold;
+    padding: 1em 0 1em;
+    width: 500px;
+    margin-bottom: 1em;
+    font-weight: 600;
+    text-shadow: 1px 1px grey;
+    height: 100vh;
   }
+
 
 }
 
@@ -170,17 +168,12 @@ button {
   }
 
   .add-form {
-    display: flex;
-    flex: 0.5;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    background: url("../../assets/images/Banana Redux.png") center center no-repeat;
-    background-size: cover;
+    height: 57em;
   }
 
   .add-form h2 {
-    /*flex: 0.4;*/
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   .add-form form {
@@ -192,8 +185,8 @@ button {
     border: 2px solid #555;
     color: black;
     padding: 1em 0 1em;
-    width: 500px;
-    margin-bottom: 1em;
+    width: 300px;
+    margin-bottom: 0em;
     font-weight: 600;
     text-shadow: 1px 1px grey;
   }

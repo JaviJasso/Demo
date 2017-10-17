@@ -39,11 +39,29 @@ transition: all 0.2s ease-in-out;
 
 @media handheld, screen and (max-width: 750px) {
 
-  .navbar nav {
-  display: flex;
-  flex-flow: column;
-  text-align: center;
+  .navbar {
+    background-color: #434854  ;
+    display: flex;
+    justify-content: center;
+    /*z-index: 1;*/
+    height: 18em;
+    scroll-behavior: smooth;
+
   }
+
+  .navbar a {
+    display: flex;
+    justify-content: space-between;
+  margin: .2em 2em 2em 2em;
+  font-size: 2em;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  transition: all 0.2s ease-in-out;
+
+    }
 
 }
 
@@ -60,9 +78,9 @@ transition: all 0.2s ease-in-out;
     display: flex;
     justify-content: center;
     /*z-index: 1;*/
-    height: 14em;
+    height: 16em;
     scroll-behavior: smooth;
-    
+
   }
 
   .navbar a {

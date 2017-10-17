@@ -54,11 +54,11 @@ class Form extends Component {
   render() {
     return (
       <div className="add-form">
-        <h2>Tracker</h2>
+        <h2>LIFE STYLE</h2>
         <form onSubmit={this.onSubmitHandler}>
           {/* Mood */}
           <Field
-            label="Did you have good day?"
+            label="Good day?"
             onChange={(event) => this.onChangeHandler('mood', event.target.checked)}
             value={this.state.mood}
             fieldType="checkbox"

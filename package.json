@@ -18,9 +18,9 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "surge -p build -d lifeframe.surge.sh",
+    "postbuild": "cp build/index.html build/404.html",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "cp build/index.html build/404.html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

@@ -9,7 +9,6 @@ body {
 .header {
   background-color: black;
   margin: 0;
-  padding: 5px;
   letter-spacing: 10px;
   color: white;
   width: 100%;
@@ -19,20 +18,16 @@ body {
 }
 
 
-
-/*.header h1 {
-  display: flex;
-  text-align: center;
-
-  letter-spacing: 4px;
-}*/
-
 @media handheld, screen and (max-width: 750px) {
 
   .header {
+    background-color: black;
+    margin: 0;
+    letter-spacing: 4px;
+    color: white;
+    width: 100%;
     display: flex;
-    flex-flow: column;
-    letter-spacing: 10px;
+    justify-content: center;
   }
 
 }
@@ -46,7 +41,7 @@ body {
     color: white;
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
   }
 
   .header h1{
