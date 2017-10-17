@@ -7,7 +7,7 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'healthtracker.auth0.com',
     clientID: 'FnglgYEe6WUS40OOfVaPQA48Z2Rw2xfe',
-    redirectUri: process.env.PUBLIC_URL === '/' ? 'http://localhost:3000/' : 'https://javijasso.github.io/demo/',
+    // redirectUri: process.env.PUBLIC_URL === '/' ? 'http://localhost:3000/' : 'https://lifeframe.surge.sh',
     audience: 'https://api.healthtracker.com',
     responseType: 'token id_token'
   });
