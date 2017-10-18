@@ -86,16 +86,17 @@ body {
     margin-bottom: 2em;
     padding: 40px 1em 0 1em;
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 1.4em;
     letter-spacing: 1px;
   }
 
   .about p {
     font-weight: 600;
     letter-spacing: 1px;
-    /*display: flex;*/
+    display: flex;
     justify-content: center;
     flex-direction: column;
+    font-size: 1.4em;
 
   }
 
