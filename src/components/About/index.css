@@ -24,11 +24,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsla(0, 46%, 22%, 0.2);
+  /*background-color: hsla(0, 46%, 22%, 0.2);*/
   border-radius: 15px;
   text-shadow: 2px 4px black;
   padding-top: .2em;
-  margin-bottom: .1em;
+  /*margin-bottom: .1em;*/
   font-weight: bold;
   font-size: 2.6em;
   letter-spacing: 6px;
@@ -40,8 +40,11 @@ body {
   /*height: 7em;*/
   /*display: flex;*/
   /*flex-direction: column;*/
-  /*justify-content: center;*/
-  padding: 0 2em 0 4em;
+    /*justify-content: center;*/
+    padding: 0 2em 0 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+
   align-items: center;
   /*background-color: hsla(0, 46%, 22%, 0.2);*/
   border-radius: 15px;
@@ -69,10 +72,7 @@ body {
 
   .about {
     color: white;
-    /*height: 100%;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
+    height: 70%;
     text-shadow: 1px 1px white;
 
 
