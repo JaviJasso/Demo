@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import './index.css';
 
 const Field = (props) => (
@@ -23,16 +22,5 @@ const Field = (props) => (
 
   </div>
 );
-//
-// Field.propTypes = {
-//   label: PropTypes.string.isRequired,
-//   fieldType: PropTypes.string.isRequired,
-//   onChangeHandler: PropTypes.func.isRequired,
-//   value: PropTypes.string.isRequired,
-// }
-//
-// Field.defaultProps = {
-//   fieldType: 'text',
-// };
 
 export default Field;

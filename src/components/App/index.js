@@ -26,10 +26,8 @@ const App = () => (
           handleAuthentication(props);
           return <Introduction {...props} />
         }}/>
-        {/* <Route path="/about" component={About}/> */}
         <Route path="/login" render={(props) => <LogIn auth={auth} {...props} />} />
         <Route path="/form" render={(props) => <StageForm {...props} /> }/>
-        {/* // <Route exact path="/form" component={StageForm}/> */}
         <Route exact path="/profile" component={Profile}/>
       </BaseLayout>
     </Switch>

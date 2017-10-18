@@ -1,8 +1,5 @@
 import React, {Component} from 'react'
 import './index.css'
-// import map from 'lodash/map';
-
-// import Field from './Field';
 import Form from '../Form';
 
 import Header from '../Header'

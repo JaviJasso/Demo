@@ -24,16 +24,8 @@ class NavBar extends Component {
       <div className='navbar'>
         <nav>
          <NavLink activeClassName="selected" className="nav-link" to="/">Home</NavLink>
-         {/* <span> | </span> */}
-         {/* <NavLink activeClassName="selected" className="nav-link" to="/about">About</NavLink> */}
          <NavLink activeClassName="selected" className="nav-link" to="/profile">Profile</NavLink>
          <NavLink activeClassName="selected" className="nav-link" to="/login">Log In</NavLink>
-         {/* <span> | </span> */}
-         {/* {auth.isAuthenticated() ? <a className="nav-link" href="#" onClick={this.logout}>Log Out</a> : <a className="nav-link" href="#" onClick={this.login}>Log In</a> } */}
-         {/* <span> | </span> */}
-         {/* <NavLink activeClassName="selected" className="nav-link" to="/signup">Sign Up</NavLink>
-         <span> | </span> */}
-         {/* <NavLink activeClassName="selected" className="nav-link" to="/form">Form</NavLink> */}
         </nav>
       </div>
     )

@@ -17,14 +17,13 @@ body {
   text-shadow: 2px 4px black;
 }
 
-.about h2{
+.about h1{
   color: white;
   height: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*background-color: hsla(0, 46%, 22%, 0.2);*/
   border-radius: 15px;
   text-shadow: 2px 4px black;
   padding-top: .2em;
@@ -71,6 +70,9 @@ body {
 @media handheld, screen and (max-width: 440px) {
 
   .about {
+    /*background: url("../../assets/images/luz.jpg") center center no-repeat;*/
+
+    background-size: cover;
     color: white;
     height: 70%;
     text-shadow: 1px 1px white;
@@ -79,7 +81,7 @@ body {
 
   }
 
-  .about h2 {
+  .about h1 {
     padding-top: 1.5em;
     margin-bottom: 2em;
     padding: 40px 1em 0 1em;

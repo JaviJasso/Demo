@@ -418,7 +418,6 @@ export default class Graph extends React.Component {
     return (
       <div id="chart-container">
         <ReactFC className="graph" {...chartConfigs} />
-        {/* <ReactFC {...revenueChartConfigs} /> */}
       </div>
     )
   }
